@@ -1,0 +1,29 @@
+/* 
+    Created on : 26/03/2025, 16:20:00
+    Author     : 0l3x
+*/
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+.logo {
+  width: 50px;
+}
+
+main {
+  padding: 7% 5%;
+}
+
+img {
+  padding: 10px;
+}
+
+.card img {
+  max-width: 100%;
+  aspect-ratio: 14 / 10;
+}
+
+.container .text-muted {
+  margin: 20px 0;
+}
