@@ -1,0 +1,1 @@
+Tras descargar cualquier proyecto, normalmente únicamente hace falta ejecutar 'npm i' en la consola del IDE para instalar las dependencias necesarias y a continuación ejecutar 'npm start' o 'npm run dev' dependiendo de la configuración del proyecto para visualizar la aplicación :)!
