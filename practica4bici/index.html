@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Práctica 4 - Bootstrap</title>
+</head>
+<body>
+
+    <!-- Navbar con Offcanvas integrado -->
+        <nav class="navbar navbar-dark bg-dark fixed-top">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Práctica 3 - Bootstrap</a>
+
+                <!-- Menú en pantallas grandes -->
+                <div class="d-none d-lg-flex align-items-center">
+                    <a class="nav-link text-white mx-2" href="#">HTML5</a>
+
+                    <!-- Dropdown CSS3 -->
+                    <div class="dropdown">
+                        <button class="btn btn-outline-light dropdown-toggle" type="button" data-bs-toggle="dropdown">
+                            CSS3
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Flex y Grid</a></li>
+                            <li><a class="dropdown-item" href="#">Variables CSS</a></li>
+                            <li><a class="dropdown-item" href="#">Nuevas funciones</a></li>
+                            <li><a class="dropdown-item" href="#">Animaciones</a></li>
+                            <li><a class="dropdown-item" href="#">Nesting</a></li>
+                            <li><a class="dropdown-item" href="#">Dibujar con CSS3</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Dropdown Sass -->
+                    <div class="dropdown mx-2">
+                        <button class="btn btn-outline-light dropdown-toggle" type="button" data-bs-toggle="dropdown">
+                            Sass
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Sintaxis scss</a></li>
+                            <li><a class="dropdown-item" href="#">Sintaxis sass</a></li>
+                            <li><a class="dropdown-item" href="#">Convertir Sass a CSS</a></li>
+                        </ul>
+                    </div>
+
+                    <a class="nav-link text-white mx-2" href="#">Bootstrap</a>
+                </div>
+
+                <!-- Formulario de búsqueda (Solo en lg) -->
+                <form class="d-none d-lg-flex ms-auto" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Buscar">
+                    <button class="btn btn-success text-white" type="submit">Buscar</button>
+                </form>
+
+                <!-- Botón para abrir Offcanvas en pantallas pequeñas -->
+                <button class="btn btn-outline-light d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#menuOffcanvas">
+                    ☰
+                </button>
+            </div>
+        </nav>
+
+        <!-- Offcanvas para pantallas pequeñas -->
+        <div class="offcanvas offcanvas-end bg-dark text-white d-lg-none" id="menuOffcanvas">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title fw-bold">Proyecto DIW</h5>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"></button>
+            </div>
+            
+            <div class="offcanvas-body">
+                <h6 class="text-uppercase">HTML5</h6>
+                <hr class="text-white">
+
+                <div class="dropdown">
+                    <button class="btn btn-outline-light dropdown-toggle w-100 text-start" type="button" data-bs-toggle="dropdown">
+                        CSS3
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Flex y Grid</a></li>
+                        <li><a class="dropdown-item" href="#">Variables CSS</a></li>
+                        <li><a class="dropdown-item" href="#">Nuevas funciones</a></li>
+                        <li><a class="dropdown-item" href="#">Animaciones</a></li>
+                        <li><a class="dropdown-item" href="#">Nesting</a></li>
+                        <li><a class="dropdown-item" href="#">Dibujar con CSS3</a></li>
+                    </ul>
+                </div>
+                <hr class="text-white">
+
+                <div class="dropdown">
+                    <button class="btn btn-outline-light dropdown-toggle w-100 text-start" type="button" data-bs-toggle="dropdown">
+                        Sass
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Sintaxis scss</a></li>
+                        <li><a class="dropdown-item" href="#">Sintaxis sass</a></li>
+                        <li><a class="dropdown-item" href="#">Convertir Sass a CSS</a></li>
+                    </ul>
+                </div>
+                <hr class="text-white">
+
+                <h6 class="text-uppercase">Bootstrap</h6>
+                <hr class="text-white">
+
+                <!-- Formulario de búsqueda dentro del Offcanvas -->
+                <form class="d-flex mt-3">
+                    <input class="form-control me-2" type="search" placeholder="Buscar">
+                    <button class="btn btn-success" type="submit">Buscar</button>
+                </form>
+            </div>
+        </div>
+    
+
+
+    <!-- Tabs -->
+    <div class="container mt-5 pt-5">
+        <ul class="nav nav-tabs">
+            <li class="nav-item"><a class="nav-link active" data-bs-toggle="tab" href="#cards">Grupo de Cards</a></li>
+            <li class="nav-item"><a class="nav-link" data-bs-toggle="tab" href="#formulario">Formulario</a></li>
+            <li class="nav-item"><a class="nav-link" data-bs-toggle="tab" href="#botones">Botones</a></li>
+        </ul>
+
+        <div class="tab-content mt-3">
+            <!-- Sección de Cards -->
+            <div id="cards" class="tab-pane fade show active">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="card border-primary">
+                            <div class="card-body">
+                                <img src="./public/Bici.webp"/>
+                                <h5 class="card-title">Card title</h5>
+                                <p>This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                            </div>
+                            <div class="card-footer">Last updated 3 mins ago</div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="card border-success">
+                            <div class="card-body">
+                                <img src="./public/Bici.webp"/>
+                                <h5 class="card-title">Card title</h5>
+                                <p>This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                            </div>
+                            <div class="card-footer">Last updated 3 mins ago</div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-4">
+                        <div class="card border-danger">
+                            <div class="card-body">
+                                <img src="./public/Bici.webp"/>
+                                <h5 class="card-title">Card title</h5>
+                                <p>This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                            </div>
+                            <div class="card-footer">Last updated 3 mins ago</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Sección de Formulario -->
+            <div id="formulario" class="tab-pane fade">
+                <form class="mt-3">
+                    <div class="mb-3">
+                        <label for="nombre" class="form-label">Nombre</label>
+                        <input type="text" class="form-control" id="nombre">
+                    </div>
+                    <div class="mb-3">
+                        <label for="correo" class="form-label">Correo Electrónico</label>
+                        <input type="email" class="form-control" id="correo">
+                    </div>
+                    <div class="mb-3">
+                        <label for="mensaje" class="form-label">Mensaje</label>
+                        <textarea class="form-control" id="mensaje" rows="3"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Enviar</button>
+                </form>
+            </div>
+
+            <!-- Sección de Botones y Modal -->
+            <div id="botones" class="tab-pane fade">
+                <button class="btn btn-warning mt-3" data-bs-toggle="modal" data-bs-target="#miModal">Abrir Modal</button>
+
+                <div class="modal fade" id="miModal">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title">Ventana Modal</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                            </div>
+                            <div class="modal-body">
+                                Contenido del modal según el PDF.
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                                <button type="button" class="btn btn-primary">Aceptar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="fixed-bottom bg-dark text-white text-center py-3 mt-4">
+        <h5>Práctica realizada por Olexandr Galaktionov Tsisar</h5>
+    </footer>
+
+    <script type="module" src="./src/main.js"></script>
+</body>
+</html>
